@@ -16,7 +16,7 @@ function MessageThread() {
   useEffect(() => {
     fetchMessages();
 
-    const intervalId = setInterval(fetchMessages, 5000);
+    const intervalId = setInterval(fetchMessages, 500);
     return () => clearInterval(intervalId);
   }, [channelId]); 
 

@@ -17,7 +17,7 @@ function LastReply() {
     fetchReplies();
 
     // Set up an interval to fetch messages every 500ms
-    const intervalId = setInterval(fetchReplies, 5000);
+    const intervalId = setInterval(fetchReplies, 500);
 
     // Cleanup function to clear the interval when the component unmounts
     // or if the channelId changes
